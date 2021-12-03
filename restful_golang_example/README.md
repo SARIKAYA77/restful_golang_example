@@ -1,2 +1,3 @@
-# restful_golang_example
-Restful api and postgresql  with golang
+# restful golang application
+Restful api and postgresql with golang
+
