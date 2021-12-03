@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 	
-	"github.com/restful_golang_example/models"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/models"
 )
 
 func (h handler) AddCoin(w http.ResponseWriter, r *http.Request) {
@@ -22,7 +22,7 @@ func (h handler) AddCoin(w http.ResponseWriter, r *http.Request) {
 	var coin models.Coin
 	json.Unmarshal(body, &coin)
 
-	// Append to the Books table
+	// Append to the Coin table
 	if result := h.DB.Create(&coin); result.Error != nil {
 		fmt.Println(result.Error)
 	}

@@ -3,7 +3,7 @@ package db
 import (
 	"log"
 
-	"github.com/restful_golang_example/models"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

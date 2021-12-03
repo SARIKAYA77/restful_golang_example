@@ -3,7 +3,7 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
-	"github.com/restful_golang_example/restful_golang_example/models"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/models"
 )
 var coinstore = make(map[string]Coin)
 var id int = 0 

@@ -3,7 +3,7 @@ package db
 import (
 	"database/sql"
 	"fmt"
-	"github.com/restful_golang_example/models"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/models"
 	"log"
 	_ "github.com/lib/pq"
 

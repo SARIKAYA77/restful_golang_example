@@ -9,7 +9,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/restful_golang_example/models"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/models"
 )
 
 func (h handler) UpdateCoin(w http.ResponseWriter, r *http.Request) {
@@ -25,8 +25,8 @@ func (h handler) UpdateCoin(w http.ResponseWriter, r *http.Request) {
 		log.Fatalln(err)
 	}
 
-	var updatedBook models.Coin
-	json.Unmarshal(body, &updatedBook)
+	var updatedCoin models.Coin
+	json.Unmarshal(body, &updatedCoin)
 
 	var coin models.Coin
 
@@ -34,11 +34,11 @@ func (h handler) UpdateCoin(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(result.Error)
 	}
 
-	book.Title = updatedBook.Title
-	book.Author = updatedBook.Author
-	book.Desc = updatedBook.Desc
+	coin.Code = updatedCoin.Code
+	coin.Amount = updatedCoin.Amount
+	coin.Price = updatedCoin.Price
 
-	h.DB.Save(&book)
+	h.DB.Save(&coin)
 
 	w.Header().Add("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)

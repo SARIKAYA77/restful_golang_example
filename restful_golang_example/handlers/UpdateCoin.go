@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 	"github.com/gorilla/mux"
-	"github.com/restful_golang_example/restful_golang_example/models"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/models"
 )
 
 

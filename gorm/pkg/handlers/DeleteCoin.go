@@ -7,14 +7,13 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/restful_golang_example/models"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/models"
 )
 
 func (h handler) DeleteCoin(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	id, _ := strconv.Atoi(vars["id"])
 
-	// Find the book by Id
 
 	var coin models.Coin
 	
@@ -22,7 +21,7 @@ func (h handler) DeleteCoin(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(result.Error)
 	}
 
-	// Delete that book
+
 	h.DB.Delete(&coin)
 
 	w.Header().Add("Content-Type", "application/json")

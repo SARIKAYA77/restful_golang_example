@@ -7,7 +7,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/restful_golang_example/models"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/models"
 )
 
 func (h handler) GetCoin(w http.ResponseWriter, r *http.Request) {
@@ -15,7 +15,7 @@ func (h handler) GetCoin(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	id, _ := strconv.Atoi(vars["id"])
 
-	// Find book by Id
+	// Find coin  by Id
 	var coin models.Coin
 	
 	if result := h.DB.First(&coin, id); result.Error != nil {

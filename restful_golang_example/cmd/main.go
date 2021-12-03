@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/restful_golang_example/restful_golang_example/handlers"
+	"github.com/SARIKAYA77/restful_golang_example/restful_golang_example/handlers"
 )
 
 func main() {
