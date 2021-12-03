@@ -11,7 +11,6 @@ import (
 )
 
 func (h handler) DeleteCoin(w http.ResponseWriter, r *http.Request) {
-	// Read the dynamic id parameter
 	vars := mux.Vars(r)
 	id, _ := strconv.Atoi(vars["id"])
 
