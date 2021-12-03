@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/restful_golang_example/models"
+	"github.com/restful_golang_example/restful_golang_example/models"
 )
 
 func add_currency(w http.ResponseWriter, r *http.Request) {

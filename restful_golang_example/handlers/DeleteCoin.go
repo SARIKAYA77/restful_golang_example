@@ -6,7 +6,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/restful_golang_example/models"
+	"github.com/restful_golang_example/restful_golang_example/models"
 )
 
 var coinstore = make(map[string]Coin)
